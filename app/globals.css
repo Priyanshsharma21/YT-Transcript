@@ -19,18 +19,28 @@
   color: white;
 }
 
+.yt_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn_yt_sub{
   background: transparent;
-  border: 1px solid rgb(162, 255, 0);
-  padding: 1.23rem;
+  border: 1px solid rgb(255, 0, 0);
+  padding: 1.4rem;
   color: white;
   border-radius: 0rem 1rem 1rem 0rem;
   transition: all 0.4s linear;
 }
 
+.yt_arrow{
+  font-size: 1rem;
+}
+
 .btn_yt_sub:hover{
-  background: rgb(162, 255, 0);
-  color: black;
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 
@@ -74,3 +84,31 @@
   font-weight: 500;
   line-height: 2.2rem;
 }
+
+.back_btn{
+  font-size: 2rem;
+}
+
+
+.loader {
+  width: 45px;
+  height: 40px;
+  background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
+            linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
+            linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+  background-size: 10px 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%
+  }
+
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%
+  }
+}
+    
+

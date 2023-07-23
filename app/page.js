@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import validUrl from "valid-url";
 import { useRouter } from 'next/navigation'
+import { BiRightArrow } from 'react-icons/bi'
+
 
 export default function Home() {
   const [form, setForm] = useState('');
@@ -34,7 +36,7 @@ export default function Home() {
         <form onSubmit={handleSubmit} className="yt_form">
           <input placeholder="Enter Youtube URL" className="main_inp" type="url" required onChange={(e) => setForm(e.target.value)} />
           <button type="submit" className="btn_yt_sub">
-            Search
+            <BiRightArrow className="yt_arrow" />
           </button>
         </form>
       </div>
