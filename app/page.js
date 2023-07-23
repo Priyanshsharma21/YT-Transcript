@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import validUrl from "valid-url";
 import { useRouter } from 'next/navigation'
 import { BiRightArrow } from 'react-icons/bi'
-
+import { Footer } from '@/components';
 
 export default function Home() {
   const [form, setForm] = useState('');
@@ -40,6 +40,8 @@ export default function Home() {
           </button>
         </form>
       </div>
+
+      <Footer />
     </main>
   );
 }

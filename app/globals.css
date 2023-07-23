@@ -25,6 +25,18 @@
   align-items: center;
 }
 
+.font_main{
+  font-size: 1.4rem;
+}
+
+.text-link{
+  transition: all 0.4s linear;
+}
+
+.text-link:hover{
+  color: rgb(0, 179, 255);
+}
+
 .btn_yt_sub{
   background: transparent;
   border: 1px solid rgb(255, 0, 0);
